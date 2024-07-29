@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" type="module" defer></script>
+  <title>Frontend Mentor | GitHub user search app</title>
+</head>
+<body>
+  <section class="container">
+    <header class="site-header">
+      <h1 class="logo">
+        devfinder
+      </h1>
+      <div class="switch-mode" id="toggle">
+        <div id="dark-text">DARK</div>
+        <div id="light-text">LIGHT</div>
+        <img id="dark-img" src="assets/icon-moon.svg" alt="">
+      </div>
+    </header>
+
+    <div class="search-bar">
+      <div class="search-input">
+        <img src="assets/icon-search.svg" alt="">
+        <input class="search-text" id="search" placeholder="Search GitHub username..."></input>
+      </div>
+      <p id="no-result">No results</p>
+      <button class="search-btn">Search</button>
+    </div>
+
+    <main class="content">
+      <img id="profile-img" src="assets/cat.png" alt="">
+      <div class="user-info">
+        <div class="user-header">
+            <h1 id="username">Username</h1>
+            <p class="user-tag"></p>
+          <p id="joined">Joined 15 Jan 2011</p>
+        </div>
+        <div class="detailed-info">
+          <p class="bio"></p>
+          <div class="stats">
+            <div id="repos info">
+              Repos
+              <p class="repos-counter count">8</p>
+            </div>
+            <div id="followers info">
+              Followers
+              <p class="followers-counter count">3933</p>
+            </div>
+            <div id="following info">
+              Following
+              <p class="following-counter count">9</p>
+            </div>
+          </div>
+          <div class="contact-info">
+            <div class="contact location">
+              <img src="assets/icon-location.svg" alt="">
+              <p id="city"></p>
+            </div>
+
+            <div class="contact twitter no-twitter">
+              <img id="social-img" src="assets/icon-twitter.svg" type="image/svg+xml" alt="">
+              <span id="social"></span>
+            </div>
+
+            <div class="contact website">
+              <img src="assets/icon-website.svg" alt="">
+              <a id="link" href=""></a>
+            </div>
+
+            <div class="contact company">
+              <img src="assets/icon-company.svg" alt="">
+              <p id="work" >@github</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+</body>
+</html>
